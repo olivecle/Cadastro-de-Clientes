@@ -1,7 +1,31 @@
 
-const criarCadastro = {};
+class cadastro {
+    nome;
+    endereco;
+    sexo;
+    renda;
+    numeroRg;
+    numeroCpf;
 
-criarCadastro.nome = 'Joao Augusto';
+    constructor (nome, endereco, sexo, renda, numeroRg, numeroCpf) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.sexo = sexo;
+        this.renda = renda;
+        this.numeroRg = numeroRg;
+        this.numeroCpf = numeroCpf;
+    }    
+}
+
+const Joao = new cadastro('Joao Augusto', 'Rua Bragança 25 bairro: Bosque', 'Masculino', 2000, 34678290, 3752993450);
+console.log(Joao);
+
+const Jaqueline = new cadastro('Jaqueline Aparecido da Silva', 'Rua Brigadeiro Faria Lima 349 bairro: Centro', 'Feminino', 5000, 242342572, 4056790358)
+console.log(Jaqueline)
+
+
+
+/*criarCadastro.nome = 'Joao Augusto';
 criarCadastro.endereco = 'Rua Bragança 25 bairro: Bosque';
 criarCadastro.sexo = 'M'
 criarCadastro.renda = 1300;
@@ -16,6 +40,6 @@ else {
     console.log('Crédito não liberado');
 }
 
-console.log(criarCadastro);    
+console.log(criarCadastro);    */
 
 
